@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvFocusTimerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Focus Timer"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00:00"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFocusTimerTitle"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:id="@+id/etDays"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Days"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@id/etHours"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTimer"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp" />
+
+    <EditText
+        android:id="@+id/etHours"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Hours"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@id/etMinutes"
+        app:layout_constraintStart_toEndOf="@id/etDays"
+        app:layout_constraintTop_toBottomOf="@id/tvTimer"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <EditText
+        android:id="@+id/etMinutes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Minutes"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@id/etSeconds"
+        app:layout_constraintStart_toEndOf="@id/etHours"
+        app:layout_constraintTop_toBottomOf="@id/tvTimer"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <EditText
+        android:id="@+id/etSeconds"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Seconds"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/etMinutes"
+        app:layout_constraintTop_toBottomOf="@id/tvTimer"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/btnStartPause"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        app:layout_constraintEnd_toStartOf="@id/btnSkip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etDays"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/btnSkip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnStartPause"
+        app:layout_constraintTop_toBottomOf="@id/etDays"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/tvFocusHistoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Focus History"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnStartPause"
+        android:layout_marginTop="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFocusHistory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFocusHistoryTitle"
+        android:layout_marginTop="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,202 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etTaskTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Task Title"
+        android:padding="12dp"
+        android:background="@drawable/search_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etTaskDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Task Description"
+        android:padding="12dp"
+        android:background="@drawable/search_background"
+        android:minLines="3"
+        android:gravity="top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etTaskTitle"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etStartTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Start Time (e.g., 10:00)"
+        android:padding="12dp"
+        android:background="@drawable/search_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etTaskDescription"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etEndTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="End Time (e.g., 11:00)"
+        android:padding="12dp"
+        android:background="@drawable/search_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etStartTime"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Date (e.g., 2025-04-08)"
+        android:padding="12dp"
+        android:background="@drawable/search_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etEndTime"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Status (e.g., Pending, Ongoing, Completed)"
+        android:padding="12dp"
+        android:background="@drawable/search_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etDate"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnSaveTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Task"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etStatus"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    //test-->
+    <!--    <EditText-->
+    <!--        android:id="@+id/etAddress"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:hint="Address (e.g., 123 Main St, Ho Chi Minh City)"-->
+    <!--        android:padding="12dp"-->
+    <!--        android:background="@drawable/search_background"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/etStatus"-->
+    <!--        android:layout_marginTop="16dp" />-->
+
+
+
+<!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/backgroundColor"-->
+<!--    android:padding="16dp">-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/etTaskName"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Task Name"-->
+<!--        android:padding="12dp"-->
+<!--        android:background="@drawable/search_background"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/etTaskStatus"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Status (e.g., Urgent, Ongoing)"-->
+<!--        android:padding="12dp"-->
+<!--        android:background="@drawable/search_background"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/etTaskName"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/etStartTime"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Start Time (e.g., 10:00 AM)"-->
+<!--        android:padding="12dp"-->
+<!--        android:background="@drawable/search_background"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/etTaskStatus"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/etEndTime"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="End Time (e.g., 11:00 AM)"-->
+<!--        android:padding="12dp"-->
+<!--        android:background="@drawable/search_background"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/etStartTime"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/etDate"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Date (e.g., 2023-10-12)"-->
+<!--        android:padding="12dp"-->
+<!--        android:background="@drawable/search_background"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/etEndTime"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/etUrl"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="URL (optional)"-->
+<!--        android:padding="12dp"-->
+<!--        android:background="@drawable/search_background"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/etDate"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnSave"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Save"-->
+<!--        android:backgroundTint="@color/primaryColor"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/etUrl"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

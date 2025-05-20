@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@android:drawable/ic_menu_today"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/calendarFragment"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="Calendar" />
+<!--    <item-->
+<!--        android:id="@+id/profileFragment"-->
+<!--        android:icon="@android:drawable/ic_menu_manage"-->
+<!--        android:title="Profile" />-->
+    <item
+        android:id="@+id/momentsFragment"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="Moments" />
+    <item
+        android:id="@+id/focusTimerFragment"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="Focus Timer" />
+<!--    // thẳng này lỗi icon-->
+
+<!--    tránh lỗi vượt quá giới hạn 5 của BottomNavigationView-->
+    <item
+        android:id="@+id/moreFragment"
+        android:icon="@android:drawable/ic_menu_more"
+        android:title="More" />
+
+<!--    <item-->
+<!--        android:id="@+id/moodTrackerFragment"-->
+<!--        android:icon="@drawable/mood_512px"-->
+<!--        android:title="Mood Tracker" />-->
+
+</menu>
+
+    <!--<item-->
+    <!--android:id="@+id/habitTrackerFragment"-->
+    <!--android:icon="@android:drawable/ic_menu_agenda"-->
+    <!--android:title="Habit Tracker" />-->
+
+    <!--    // co the bo-->
+    <!--    <item-->
+    <!--        android:id="@+id/friendsFragment"-->
+    <!--        android:icon="@android:drawable/ic_menu_add"-->
+    <!--        android:title="Friends" />-->
+    <!--    <item-->
+    <!--        android:id="@+id/settingsFragment"-->
+    <!--        android:icon="@android:drawable/ic_menu_preferences"-->
+    <!--        android:title="Settings" />-->

@@ -1,0 +1,12 @@
+DashBoard cap nhat 4 ham ,set su kien onclick
+        // Load recent notes
+        loadNotes()
+
+        // Setup lời chào
+        setupGreeting()
+
+        // Setup tìm kiếm
+        setupSearch()
+
+        // Setup bộ lọc
+        setupFilter()

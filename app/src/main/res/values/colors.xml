@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#6C63FF</color> <!-- Màu tím chính -->
+    <color name="backgroundColor">#F5F5F5</color> <!-- Màu nền -->
+    <color name="textColor">#212121</color> <!-- Màu chữ chính -->
+    <color name="accentColor">#FF6F61</color> <!-- Màu hồng -->
+    <color name="cardColorPurple">#EDE7FF</color> <!-- Màu tím nhạt -->
+    <color name="cardColorBlue">#E6F0FA</color> <!-- Màu xanh nhạt -->
+    <color name="cardColorOrange">#FFE8D6</color> <!-- Màu cam nhạt -->
+    <color name="cardColorPink">#FFD6E0</color> <!-- Màu hồng nhạt -->
+</resources>

@@ -1,0 +1,162 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_revert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Calendar -->
+    <TextView
+        android:id="@+id/tvMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="October, 2025"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBack"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/ivPrevMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_media_previous"
+        app:layout_constraintStart_toEndOf="@id/tvMonth"
+        app:layout_constraintTop_toTopOf="@id/tvMonth"
+        android:layout_marginStart="8dp" />
+
+    <ImageView
+        android:id="@+id/ivNextMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_media_next"
+        app:layout_constraintStart_toEndOf="@id/ivPrevMonth"
+        app:layout_constraintTop_toTopOf="@id/tvMonth"
+        android:layout_marginStart="8dp" />
+
+    <!-- Days of Week Header -->
+    <LinearLayout
+        android:id="@+id/llDaysHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvMonth"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sun"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mon"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tue"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wed"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thu"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fri"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sat"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/textColor" />
+    </LinearLayout>
+
+    <!-- Calendar Days -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/llDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/llDaysHeader"
+        android:layout_marginTop="8dp" />
+
+    <!-- Today Tasks -->
+    <TextView
+        android:id="@+id/tvTodayTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today Tasks"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llDays"
+        android:layout_marginTop="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTodayTasks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTodayTasks"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

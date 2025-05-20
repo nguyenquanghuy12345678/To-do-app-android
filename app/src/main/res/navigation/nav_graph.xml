@@ -1,0 +1,118 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.to_do_app.ui.dashboard.DashboardFragment"
+        android:label="Dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.to_do_app.ui.calendar.CalendarFragment"
+        android:label="Calendar" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.to_do_app.ui.profile.ProfileFragment"
+        android:label="Profile" />
+
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="com.example.to_do_app.ui.add.AddNoteFragment"
+        android:label="Add Note" />
+
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.example.to_do_app.ui.add.AddTaskFragment"
+        android:label="Add Task" />
+    <fragment
+        android:id="@+id/momentsFragment"
+        android:name="com.example.to_do_app.ui.moments.MomentsFragment"
+        android:label="Moments">
+        <action
+            android:id="@+id/action_momentsFragment_to_addMomentFragment"
+            app:destination="@id/addMomentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMomentFragment"
+        android:name="com.example.to_do_app.ui.moments.AddMomentFragment"
+        android:label="Add Moment" />
+    <fragment
+        android:id="@+id/focusTimerFragment"
+        android:name="com.example.to_do_app.ui.focustimer.FocusTimerFragment"
+        android:label="Focus Timer" />
+
+    <fragment
+        android:id="@+id/moodTrackerFragment"
+        android:name="com.example.to_do_app.ui.moodtracker.MoodTrackerFragment"
+        android:label="Mood Tracker" />
+<!--    xử lý chuyển hướng fragment-->
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.example.to_do_app.ui.more.MoreFragment"
+        android:label="More">
+        <action
+            android:id="@+id/action_moreFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_moreFragment_to_moodTrackerFragment"
+            app:destination="@id/moodTrackerFragment" />
+
+<!--        xử lý sự kiện Travel Planer-->
+        <action
+            android:id="@+id/action_moreFragment_to_travelPlannerFragment"
+            app:destination="@id/travelPlannerFragment" />
+    </fragment>
+
+<!--        update for Travel Planer-->
+    <fragment
+        android:id="@+id/travelPlannerFragment"
+        android:name="com.example.to_do_app.ui.travelplanner.TravelPlannerFragment"
+        android:label="Travel Planner">
+        <action
+            android:id="@+id/action_travelPlannerFragment_to_addTravelPlanFragment"
+            app:destination="@id/addTravelPlanFragment" />
+    </fragment>
+
+<!--cap nhat argument-->
+    <fragment
+        android:id="@+id/addTravelPlanFragment"
+        android:name="com.example.to_do_app.ui.travelplanner.AddTravelPlanFragment"
+        android:label="Add Travel Plan">
+        <argument
+            android:name="travelPlanJson"
+            app:nullable="true"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
+
+
+
+    <!--    // co the bo-->
+    <!--    <fragment-->
+    <!--        android:id="@+id/calendarFragment"-->
+    <!--        android:name="com.example.to_do_app.ui.calendar.CalendarFragment"-->
+    <!--        android:label="Calendar">-->
+    <!--        <action-->
+    <!--            android:id="@+id/action_calendarFragment_to_addTaskFragment"-->
+    <!--            app:destination="@id/addTaskFragment" />-->
+    <!--    </fragment>-->
+    <!--    <fragment-->
+
+    <!--        android:id="@+id/mapFragment"-->
+    <!--        android:name="com.example.to_do_app.ui.map.MapFragment"-->
+    <!--        android:label="Map">-->
+    <!--        <action-->
+    <!--            android:id="@+id/action_mapFragment_to_addTaskFragment"-->
+    <!--            app:destination="@id/addTaskFragment" />-->
+    <!--    </fragment>-->

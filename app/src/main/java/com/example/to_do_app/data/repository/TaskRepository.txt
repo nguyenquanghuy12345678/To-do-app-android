@@ -1,0 +1,21 @@
+package com.example.to_do_app.data.repository
+
+
+
+import android.content.Context
+import com.example.to_do_app.data.database.DatabaseProvider
+import com.example.to_do_app.data.model.Task
+import kotlinx.coroutines.flow.Flow
+
+class `TaskRepository.txt`(context: Context) {
+
+    private val taskDao = DatabaseProvider.getDatabase(context).taskDao()
+
+    fun getTasksByDate(date: String): Flow<List<Task>> {
+        return taskDao.getTasksByDate(date)
+    }
+
+    suspend fun addTask(task: Task) {
+        taskDao.insert(task)
+    }
+}
