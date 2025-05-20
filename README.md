@@ -41,7 +41,7 @@ Explore the app's interface and functionality through these detailed screenshots
 
 | **Home Screen** - Displays the list of plans with action buttons. | **Travel Planner Screen** - Form to input travel details. |
 |------------------------------------------|-------------------------------|
-| ![Home Screen](screenshots/home_screen.jpg) | ![Travel Planner Screen](screenshots/travel_planner_screen.png) |
+| ![Home Screen](screenshots/home_screen.jpg) | ![Travel Planner Screen](screenshots/travel_planner_screen.jpg) |
 
 | **Calendar Screen** - Calendar view for planning. | **Moments Screen** - Highlights special moments or notes. |
 |---------------------------------------|---------------------------------|
