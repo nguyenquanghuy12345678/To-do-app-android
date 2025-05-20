@@ -73,5 +73,5 @@ Follow these steps to set up and run the project on your local machine:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/username/to-do-app.git
+   git clone https://github.com/nguyenquanghuy12345678/To-do-app-android.git
    cd to-do-app
