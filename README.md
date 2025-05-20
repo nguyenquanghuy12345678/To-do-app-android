@@ -39,19 +39,19 @@ This project was developed as a personal learning exercise and a practical tool 
 ## Screenshots
 Explore the app's interface and functionality through these detailed screenshots, showcasing key features and screens:
 
-| **Home Screen** - Displays the list of plans with action buttons. | **Add Travel Plan** - Form to input travel details. |
-|------------------------------------------|--------------------------------------------|
-| ![Home Screen](screenshots/home_screen.jpg) | ![Add Travel Plan](screenshots/add_travel_plan.png) |
+| **Home Screen** - Displays the list of plans with action buttons. | **Travel Planner Screen** - Form to input travel details. |
+|------------------------------------------|-------------------------------|
+| ![Home Screen](screenshots/home_screen.jpg) | ![Travel Planner Screen](screenshots/travel_planner_screen.png) |
 
-| **Weather Display** - Shows weather forecast for the destination. | **Travel Plan Details** - Full view of a travel plan. |
-|-------------------------------------------|-------------------------------------------|
-| ![Weather Display](screenshots/weather_display.png) | ![Travel Plan Details](screenshots/travel_plan_details.png) |
+| **Calendar Screen** - Calendar view for planning. | **Moments Screen** - Highlights special moments or notes. |
+|---------------------------------------|---------------------------------|
+| ![Calendar Screen](screenshots/calendar_screen.jpg) | ![Moments Screen](screenshots/moments_screen.jpg) |
 
-| **Work Location View** - Customized view for work locations. | **Edit Plan Screen** - Interface for modifying plans. |
-|-----------------------------------------|-----------------------------------------|
-| ![Work Location View](screenshots/work_location_view.png) | ![Edit Plan Screen](screenshots/edit_plan_screen.png) |
+| **Focus Timer Screen** - Timer for focused tasks. | **Mood Tracker Screen** - Mood tracking interface. |
+|---------------------------------------|----------------------------------|
+| ![Focus Timer Screen](screenshots/focus_timer_screen.jpg) | ![Mood Tracker Screen](screenshots/mood_tracker_screen.jpg) |
 
-*Note*: The `screenshots` folder is located in the root directory of the repository. Ensure all image files (`home_screen.png`, `add_travel_plan.png`, `weather_display.png`, `travel_plan_details.png`, `work_location_view.png`, `edit_plan_screen.png`) are uploaded to this folder.
+*Note*: The `screenshots` folder is located in the root directory of the repository. Ensure all image files (`calendar_screen.jpg`, `focus_timer_screen.jpg`, `home_screen.jpg`, `moments_screen.jpg`, `mood_tracker_screen.jpg`, `travel_planner_screen.png`) are uploaded to this folder.
 
 ## Requirements
 ### Development Environment
